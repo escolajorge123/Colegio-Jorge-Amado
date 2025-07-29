@@ -20,7 +20,7 @@ body {
 
 /* Cores do Design (Variáveis CSS para fácil manutenção) */
 :root {
-    --primary-blue:#0A2342;    /* Azul usado em botões e títulos de página */
+    --primary-blue: #007bff;    /* Azul usado em botões e títulos de página */
     --dark-blue-text: #0A2342;  /* Azul escuro para títulos principais e textos importantes */
     --text-color: #34495e;      /* Cor de texto padrão para parágrafos */
     --light-gray-bg: #f0f4f8;   /* Fundo cinza claro para seções alternadas */
@@ -35,9 +35,9 @@ body {
     --cor-texto-principal: var(--text-color);
     --cor-primaria: var(--primary-blue);
 
-    /* ALTERAÇÃO AQUI: Cores do botão para tons de azul */
+    /* Cores do botão para tons de azul */
     --cor-destaque: var(--primary-blue); /* Botão azul, usando o primary-blue */
-    --cor-destaque-hover: #0A2342; /* Um tom de azul mais escuro para o hover */
+    --cor-destaque-hover: #0056b3; /* Um tom de azul mais escuro para o hover */
     --cor-primaria-rgb: 0, 123, 255; /* Versão RGB da cor primária para sombras */
 }
 
@@ -115,7 +115,7 @@ nav ul li a.active {
     display: grid;
     grid-template-columns: 1fr; /* Padrão uma coluna para mobile */
     gap: 40px;
-    align-items: center;
+    align-items: center; /* Alinha o conteúdo verticalmente no centro da linha do grid */
 }
 @media (min-width: 992px) { /* Duas colunas para telas maiores */
     .bem-vindos-grid {
@@ -142,7 +142,20 @@ nav ul li a.active {
     border-radius: 12px; /* Mantém cantos arredondados para o container */
     box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Mantém a sombra */
     overflow: hidden; /* Garante que a imagem respeite o border-radius do card */
+    display: flex; /* Adicionado para centralizar a imagem verticalmente, se necessário */
+    align-items: center; /* Centraliza verticalmente a imagem dentro do card */
+    justify-content: center; /* Centraliza horizontalmente a imagem dentro do card */
 }
+
+/* Estilo para a imagem da fachada no card "Bem-vindos" */
+.fachada-escola-imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    width: 100%;    /* Faz a imagem ocupar 100% da largura do .bem-vindos-imagem-card */
+    height: auto;   /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco para margin: auto */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente dentro do seu contêiner */
+}
+
 
 /* Títulos de Seção (geral) */
 .section-title {
@@ -508,7 +521,7 @@ footer {
 }
 
 .btn-submit {
-    background-color: var(--cor-destaque); /* AGORA ESTÁ USANDO primary-blue */
+    background-color: var(--cor-destaque);
     color: white;
     padding: 15px 25px;
     border: none;
@@ -523,5 +536,5 @@ footer {
 }
 
 .btn-submit:hover {
-    background-color: var(--cor-destaque-hover); /* AGORA ESTÁ USANDO um azul mais escuro */
+    background-color: var(--cor-destaque-hover);
 }
