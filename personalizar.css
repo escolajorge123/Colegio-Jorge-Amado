@@ -20,7 +20,7 @@ body {
 
 /* Cores do Design (Variáveis CSS para fácil manutenção) */
 :root {
-    --primary-blue: #007bff;    /* Azul usado em botões e títulos de página */
+    --primary-blue: #0A2342;    /* Azul usado em botões e títulos de página */
     --dark-blue-text: #0A2342;  /* Azul escuro para títulos principais e textos importantes */
     --text-color: #34495e;      /* Cor de texto padrão para parágrafos */
     --light-gray-bg: #f0f4f8;   /* Fundo cinza claro para seções alternadas */
@@ -37,7 +37,7 @@ body {
 
     /* Cores do botão para tons de azul */
     --cor-destaque: var(--primary-blue); /* Botão azul, usando o primary-blue */
-    --cor-destaque-hover: #0056b3; /* Um tom de azul mais escuro para o hover */
+    --cor-destaque-hover: #0A2342; /* Um tom de azul mais escuro para o hover */
     --cor-primaria-rgb: 0, 123, 255; /* Versão RGB da cor primária para sombras */
 }
 
