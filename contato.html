@@ -29,15 +29,33 @@
         <section id="contato-pagina" class="section-padding">
             <div class="container">
                 <h2 class="section-title">Fale Conosco</h2>
-                
+
                 <div class="contato-layout-grid">
                     <div class="info-contato card">
                         <h3 class="contato-bloco-titulo">Nossos Contatos</h3>
                         <p class="contact-detail"><strong>Endereço:</strong><br>Rua João Durval José Teixeira, 266 – Boa Vista, Seabra – Bahia.</p>
-                        <p class="contact-detail"><strong>Telefone:</strong><br>☎️ (75) 99900-7737</a></p>
-                        <p class="contact-detail"><strong>Email:</strong><br>📧 colegiojorgeamado@gmail.com</a></p>
+                        <p class="contact-detail"><strong>Telefone:</strong><br>☎️ (75) 99900-7737</p>
+                        <p class="contact-detail"><strong>Email:</strong><br>📧 colegiojorgeamado@gmail.com</p>
                     </div>
 
+                    <div class="form-contato card">
+                        <h3 class="contato-bloco-titulo">Envie uma sugestão</h3>
+                        <form action="https://formspree.io/f/xwpqbygq" method="POST">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="Nome" required>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="_replyto" required>
+
+                            <label for="assunto">Assunto da Mensagem:</label>
+                            <input type="text" id="assunto" name="Assunto">
+
+                            <label for="mensagem">Sua Mensagem:</label>
+                            <textarea id="mensagem" name="Mensagem" rows="6" required></textarea>
+
+                            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
                     <div class="mapa-wrapper card">
                         <h3 class="contato-bloco-titulo">Nossa Localização</h3>
                         <iframe
@@ -49,7 +67,7 @@
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,7 +99,7 @@
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2025 Colégio Jorge Amado. Todos os direitos reservados.</p>
+            <p>© 2025 Colégio Jorge Amado. Todos os direitos reservados.</p>
         </div>
     </footer>
 
